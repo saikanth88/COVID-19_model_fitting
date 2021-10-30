@@ -1,12 +1,13 @@
 # COVID-19 Parameter estimation
 
-data -> parameter_estimation -> model_hospitalizations -> output_generation
-
-## Usage
+## About the Project
 
 ## Getting Started
 
+## Usage
+
 ## Roadmap
+data -> parameter_estimation -> model_hospitalizations -> output_generation
 
 ## License
 
