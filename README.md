@@ -7,7 +7,10 @@
 ## Usage
 
 ## Roadmap
-data -> parameter_estimation -> model_hospitalizations -> output_generation
+* data
+* parameter_estimation
+* model_hospitalizations
+* output_generation
 
 ## License
 
