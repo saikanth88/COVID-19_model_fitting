@@ -1,3 +1,3 @@
-# COVID-19_Parameter_Estimation
+# COVID-19
 
 data -> parameter_estimation -> model_hospitalizations -> output_generation
