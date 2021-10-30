@@ -1,6 +1,6 @@
 debug:
-	g++ -I/packages/gsl/2.6/include -O3 -c -g grid_search_covid_m.cpp
-	g++ -L/packages/gsl/2.6/lib grid_search_covid_m.o -luuid -lgsl -lgslcblas -lm -o grid_search_covid_m
+	g++ -I/packages/gsl/2.6/include -O3 -c -g covid_hospitalizations_beta.cpp
+	g++ -L/packages/gsl/2.6/lib covid_hospitalizations_beta.o -luuid -lgsl -lgslcblas -lm -o covid_hospitalizations_beta
 
 clean:
 	rm -f *.o
