@@ -7,24 +7,25 @@
 ## Usage
 
 ## Roadmap
-### data
+### ./data
 * [region]_R0_hosp_count.csv - daily new hospitalizations
 * [region]_countyData.csv - spatial data (population size, population density, area, latitude, longitude, etc.)
 * [region]_daily_beta.csv, region_beta_vals.csv daily transmission rate (beta) values
-  
-### parameter_estimation
-* Select the case: estimate only beta, estimate only m, or estimate both beta and m.
+* region = `low` for rural, region = `mid` for suburban, and region = `high` for urban.
+
+### ./parameter_estimation
+* Select the case: estimate only transmission rate `(beta)`, estimate only movement rate `(m)`, or estimate both transmission rate and movement rate `(beta_m)`.
 * grid_search_covid_[case].cpp contains the main file.
 * Set the `METHOD` to 0 or 1 to choose the likelihood calculation method.
 * Set number of realizations `(n_realz)` and number of grid searches `(n_searches)`.
-* Set `const string region` to `low`, `mid`, or `high` to select the region (rural, suburban, or urban).
+* Set `const string region` to `low`, `mid`, or `high` to select the region.
 * Include [region]_R0_hosp_count.csv, [region]_countyData.csv, and [region]_daily_beta.csv (only need to estimate m) files in the same folder.
 * Use the `Makefile` to compile and run the code.
 * The code will generate "final_output.csv" with weekly parameter estimations.
 
 Note: *You may need to uncomment the line `#include <uuid/uuid.h>` in county_param.h and the lines related to creating a filename using `uuid` in grid_search_covid_[case].cpp to run the code in parallel.*
   
-### model_hospitalizations
+### ./model_hospitalizations
 * Concatenate all outputs into one .csv file (e.g.: [region]_full_covid_list_5000_all_pops.csv), if the parameter estimation was implemented in parallel.
 * Select the case: model hospitalizations using estimated beta, hospitalizations using estimated m, or hospitalizations using estimated beta and m.
 * covid_hospitalizations_[case].cpp contains the main file.
@@ -33,7 +34,7 @@ Note: *You may need to uncomment the line `#include <uuid/uuid.h>` in county_par
 * Compile and run the code.
 * The code will generate "params_all_counts_5000_all_pops.csv" with daily new hospitalizations, total hospitalizations,and daily new deaths.
 
-### output_generation
+### ./output_generation
 * User must have output files for all three regions for a specific case to run this code.
 * Select the `R` file with the correct case: generate_output_[case].R
 * Set the path to the .csv files in the code.
