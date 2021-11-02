@@ -17,7 +17,7 @@ All the codes were written using C++ and R languages. The main codes of paramete
 
 ### ./parameter_estimation
 * Select the case: estimate only transmission rate `(beta)`, estimate only movement rate `(m)`, or estimate both transmission rate and movement rate `(beta_m)`.
-* grid_search_covid_[case].cpp contains the main file.
+* grid_search_covid_[case].cpp contains the main C++ file.
 * Set the `METHOD` to 0 or 1 to choose the likelihood calculation method.
 * Set number of realizations `(n_realz)` and number of grid searches `(n_searches)`.
 * Set `const string region` to `low`, `mid`, or `high` to select the region.
@@ -30,7 +30,7 @@ Note: *You may need to uncomment the line `#include <uuid/uuid.h>` in county_par
 ### ./model_hospitalizations
 * Concatenate all outputs into one .csv file (e.g.: [region]_full_covid_list_5000_all_pops.csv), if the parameter estimation was implemented in parallel.
 * Select the case: model hospitalizations using estimated beta, hospitalizations using estimated m, or hospitalizations using estimated beta and m.
-* covid_hospitalizations_[case].cpp contains the main file.
+* covid_hospitalizations_[case].cpp contains the main C++ file.
 * Include [region]_countyData.csv, and [region]_daily_beta.csv (only need to estimate m) files in the same folder.
 * Change the filename covid_hospitalizations_[case] in `Makefile` according to the case.
 * Compile and run the code.
