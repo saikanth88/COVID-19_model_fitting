@@ -12,8 +12,8 @@ All the codes were written using C++ and R languages. The main codes of paramete
 ### ./data
 * [region]_R0_hosp_count.csv - daily new hospitalizations
 * [region]_countyData.csv - spatial data (population size, population density, area, latitude, longitude, etc.)
-* [region]_daily_beta.csv, region_beta_vals.csv daily transmission rate (beta) values
-* region = `low` for rural, region = `mid` for suburban, and region = `high` for urban.
+* [region]_daily_beta.csv, region_beta_vals.csv - daily transmission rate (beta) values
+* region = `low` for rural, region = `mid` for suburban, and region = `high` for urban
 
 ### ./parameter_estimation
 * Select the case: estimate only transmission rate `(beta)`, estimate only movement rate `(m)`, or estimate both transmission rate and movement rate `(beta_m)`.
