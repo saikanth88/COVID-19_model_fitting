@@ -42,7 +42,7 @@ Note: *You may need to uncomment the line `#include <uuid/uuid.h>` in county_par
 * Set the path to the .csv files in the code.
 * Files need to generate the figures: [region]_R0_hosp_count.csv, [region]_countyData.csv, [region]_beta_vals.csv, [region]_full_covid_list_5000_all_pops.csv, [region]_params_all_counts_5000_all_pops.csv
 * The code assumes both [region]_full_covid_list_5000_all_pops.csv and [region]_params_all_counts_5000_all_pops.csv files are stored in a sub-folder in the main folder with region specific .csv files.
-* The code will create plots with the three regions, weekly transmission rate estimations, weekly movement rate esitmations, and new hospitalizations.
+* The code will create plots of weekly transmission rate estimations, weekly movement rate esitmations, and new hospitalizations for the three regions. 
 
 ## License
 
