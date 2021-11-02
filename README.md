@@ -1,8 +1,10 @@
 # COVID-19 parameter estimation
 
 ## About the Project
+In this project, we propose a method to estimate time-varying ransmission rates and host movement rates in a stochastic and spatially-explicit model of SARS-CoV-2 using  grid search algorithm with sliding window technique. You can find the SARS-CoV-2 model used for the implementation of the code in [medrxiv](https://www.medrxiv.org/content/10.1101/2021.05.13.21256216v1). 
 
 ## Getting Started
+All the codes were written using C++ and R languages. The main codes of parameter estimation and computing new hospitalizations were written using C++. The R code is used to generate figures of estimated parameters and hospitalizations.
 
 ## Usage
 
@@ -36,7 +38,7 @@ Note: *You may need to uncomment the line `#include <uuid/uuid.h>` in county_par
 
 ### ./output_generation
 * User must have output files for all three regions for a specific case to run this code.
-* Select the `R` file with the correct case: generate_output_[case].R
+* Select the R file with the correct case: generate_output_[case].R
 * Set the path to the .csv files in the code.
 * Files need to generate the figures: [region]_R0_hosp_count.csv, [region]_countyData.csv, [region]_beta_vals.csv, [region]_full_covid_list_5000_all_pops.csv, [region]_params_all_counts_5000_all_pops.csv
 * The code assumes both [region]_full_covid_list_5000_all_pops.csv and [region]_params_all_counts_5000_all_pops.csv files are stored in a sub-folder in the main folder with region specific .csv files.
