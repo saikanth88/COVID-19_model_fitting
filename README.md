@@ -7,8 +7,13 @@ In this project, we propose a method to estimate time-varying transmission rates
 All the codes were written in using C++ and R languages. The main codes of parameter estimation and computing new hospitalizations were written in C++. The R code is used to generate figures of estimated parameters and hospitalizations.
 
 ## Dependencies
-* C++: gsl
-* R: tidyverse, lubridate, dplyr, viridis, gridExtra, grid, ggsn
+* C++: [gsl](https://www.gnu.org/software/gsl/doc/html/intro.html#obtaining-gsl)
+* R: [tidyverse](https://cran.r-project.org/web/packages/tidyverse/index.html),
+[lubridate](https://cran.r-project.org/web/packages/lubridate/index.html), 
+[dplyr](https://cran.r-project.org/web/packages/dplyr/index.html), 
+[viridis](https://cran.r-project.org/web/packages/viridis/index.html), 
+[gridExtra](https://cran.r-project.org/web/packages/gridExtra/index.html), 
+[ggsn](https://cran.r-project.org/web/packages/ggsn/index.html)
 
 ## Roadmap
 ### ./data
@@ -54,3 +59,4 @@ Saikanth Ratnavale: saikanth.ratnavale@nau.edu, saik8801@gmail.com
 Joseph Mihaljevic: joseph.mihaljevic@nau.edu
 
 ## Acknowledgments
+Project supported by the National Science Foundation under Grant No. 2028629.
