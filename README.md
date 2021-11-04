@@ -4,9 +4,11 @@
 In this project, we propose a method to estimate time-varying transmission rates and host movement rates in a stochastic and spatially-explicit model of SARS-CoV-2 using  grid search algorithm with sliding window technique. You can find the SARS-CoV-2 model used for the implementation of the code in [medrxiv](https://www.medrxiv.org/content/10.1101/2021.05.13.21256216v1). 
 
 ## Getting Started
-All the codes were written using C++ and R languages. The main codes of parameter estimation and computing new hospitalizations were written using C++. The R code is used to generate figures of estimated parameters and hospitalizations.
+All the codes were written in using C++ and R languages. The main codes of parameter estimation and computing new hospitalizations were written in C++. The R code is used to generate figures of estimated parameters and hospitalizations.
 
-## Usage
+## Dependencies
+* C++: gsl
+* R: tidyverse, lubridate, dplyr, viridis, gridExtra, grid, ggsn
 
 ## Roadmap
 ### ./data
