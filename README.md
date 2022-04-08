@@ -54,7 +54,7 @@ Note: *You may need to uncomment the line `#include <uuid/uuid.h>` in county_par
 ## License
 
 ## Contacts
-Saikanth Ratnavale: saikanth.ratnavale@nau.edu, saik8801@gmail.com
+Saikanth Ratnavale: sratnava@nd.edu, saik8801@gmail.com
 
 Joseph Mihaljevic: joseph.mihaljevic@nau.edu
 
